@@ -118,7 +118,8 @@ img {
   opacity: 0;
 }
 
-.header-link:hover::after {
+.header-link:hover::after,
+.header-link:focus::after {
   opacity: 1;
 }
 
