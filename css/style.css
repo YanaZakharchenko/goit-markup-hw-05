@@ -128,7 +128,7 @@ img {
 } */
 
 /* подчёркивание ссылки текущей страницы */
-.current-page::after {
+.header-link.current-page::after {
   content: '';
   position: absolute;
   left: 0;
