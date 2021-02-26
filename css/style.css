@@ -509,6 +509,8 @@ img {
   padding: 6px 22px;
   border: none;
   border-radius: 4px;
+
+  transition: background-color var(--animation), color var(--animation);
 }
 
 .nav-btn:hover,
@@ -537,13 +539,13 @@ img {
   transition: box-shadow var(--animation);
 }
 
-.project > .project-list:nth-child(3n) {
-  margin-right: 0;
-}
-
 .project > .project-list:hover,
 .project > .project-list:focus {
   box-shadow: var(--shadow-project);
+}
+
+.project > .project-list:nth-child(3n) {
+  margin-right: 0;
 }
 
 /* Оверлей */
