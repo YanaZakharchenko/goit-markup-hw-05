@@ -499,12 +499,12 @@ img {
 }
 
 .nav-btn {
-  background-color: var(--color-original);
-  color: var(--color-dark);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
   text-align: center;
+  background-color: var(--color-original);
+  color: var(--color-dark);
 
   padding: 6px 22px;
   border: none;
@@ -535,7 +535,6 @@ img {
   margin-bottom: 30px;
   border: var(--border-projects);
 
-  position: relative;
   transition: box-shadow var(--animation);
 }
 
@@ -550,19 +549,25 @@ img {
 
 /* Оверлей */
 
-.project-overlay {
+.overlay-conteiner {
+  position: relative;
+}
+
+.overlay-text {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.6;
   color: var(--color-white);
-  background-color: var(--background-portfolio);
+}
 
+.project-overlay {
   position: absolute;
   width: 100%;
   height: 294px;
   top: 0;
   left: 0;
   padding: 63px 24px;
+  background-color: var(--background-portfolio);
 
   transform: translateY(100%);
   opacity: 0;
@@ -594,6 +599,5 @@ img {
   font-weight: normal;
   font-size: 16px;
   line-height: 1.9;
-
   color: var(--color-gray);
 }
