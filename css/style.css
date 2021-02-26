@@ -106,6 +106,8 @@ img {
 
   color: var(--color-dark);
   padding: 32px 0;
+
+  transition: color var(--animation);
 }
 
 /* .header-link::after {
@@ -146,6 +148,8 @@ img {
   align-items: center;
   padding: 32px 0;
   color: var(--color-gray);
+
+  transition: color var(--animation);
 }
 
 .header-phone {
@@ -375,7 +379,7 @@ img {
   border: var(--border-clients);
   fill: var(--color-icons);
 
-  transition: ;
+  transition: fill var(--animation), border-color var(--animation);
 }
 
 .clients:hover,
@@ -420,11 +424,15 @@ img {
 .info-address {
   color: var(--color-white);
   margin-top: 20px;
+
+  transition: color var(--animation);
 }
 
 .info-link {
   color: rgba(255, 255, 255, 0.6);
   margin-top: 9px;
+
+  transition: color var(--animation);
 }
 
 .info-address:hover,
@@ -456,6 +464,8 @@ img {
   background-color: var(--background-icons);
   fill: var(--color-white);
   margin-right: 10px;
+
+  transition: background-color var(--animation);
 }
 
 /* .footer-link:nth-child(4) {
