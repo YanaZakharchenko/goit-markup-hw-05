@@ -10,6 +10,7 @@
   --border-portfolio: 1px solid #ececec;
   --border-projects: 1px solid #eeeeee;
   --border-clients: 1px solid #afb1b8;
+  --border-clients-hover: 1px solid #2196f3;
   --background-icons: rgba(255, 255, 255, 0.1);
   --background-features: rgba(47, 48, 58, 0.8);
   --background-portfolio: rgba(33, 150, 243, 0.9);
@@ -379,13 +380,13 @@ img {
   border: var(--border-clients);
   fill: var(--color-icons);
 
-  transition: fill var(--animation), border-color var(--animation);
+  transition: fill var(--animation), border var(--animation);
 }
 
 .clients:hover,
 .clients:focus {
   fill: var(--color-blue);
-  border-color: var(--color-blue);
+  border: var(--border-clients-hover);
 }
 
 /* ФУТЕР */
@@ -533,6 +534,7 @@ img {
   border: var(--border-projects);
 
   position: relative;
+  transition: box-shadow var(--animation);
 }
 
 .project > .project-list:nth-child(3n) {
@@ -542,8 +544,6 @@ img {
 .project > .project-list:hover,
 .project > .project-list:focus {
   box-shadow: var(--shadow-project);
-  transform: translateY(0);
-  opacity: 1;
 }
 
 /* Оверлей */
