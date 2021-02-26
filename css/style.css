@@ -348,8 +348,7 @@ img {
   height: 44px;
   fill: var(--color-icons);
 
-  transition: fill var(--animation), border-radius var(--animation),
-    background-color var(--animation);
+  transition: fill var(--animation);
 }
 
 .social-link:hover,
