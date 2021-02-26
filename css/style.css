@@ -11,6 +11,8 @@
   --border-projects: 1px solid #eeeeee;
   --border-clients: 1px solid #afb1b8;
   --background-icons: rgba(255, 255, 255, 0.1);
+  --background-features: rgba(47, 48, 58, 0.8);
+  --background-portfolio: rgba(33, 150, 243, 0.9);
   --shadow-card: 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   --shadow-project: 0px 1px 1px rgba(0, 0, 0, 0.12),
@@ -263,9 +265,27 @@ img {
   margin-bottom: 50px;
 }
 
+.section-title.white {
+  color: var(--color-white);
+  margin-bottom: 0;
+}
+
 .features-list {
   display: flex;
   justify-content: space-between;
+}
+
+.features-items {
+  position: relative;
+}
+
+.features-activ {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  padding: 27px 82px;
+  background: var(--background-features);
 }
 
 /* СЕКЦИЯ 3 */
@@ -327,6 +347,8 @@ img {
   width: 44px;
   height: 44px;
   fill: var(--color-icons);
+
+  transition: fill var(--animation);
 }
 
 .social-link:hover,
@@ -352,6 +374,8 @@ img {
   border-radius: 4px;
   border: var(--border-clients);
   fill: var(--color-icons);
+
+  transition: ;
 }
 
 .clients:hover,
@@ -497,6 +521,8 @@ img {
   margin-right: 30px;
   margin-bottom: 30px;
   border: var(--border-projects);
+
+  position: relative;
 }
 
 .project > .project-list:nth-child(3n) {
@@ -506,10 +532,42 @@ img {
 .project > .project-list:hover,
 .project > .project-list:focus {
   box-shadow: var(--shadow-project);
+  /* transform: translateY(0);
+  opacity: 1; */
+}
+
+/* Оверлей */
+
+.project-overlay {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.6;
+  color: var(--color-white);
+  background-color: var(--background-portfolio);
+
+  position: absolute;
+  width: 100%;
+  height: 294px;
+  top: 0;
+  left: 0;
+  padding: 63px 24px;
+  transform: translateY(100%);
+  opacity: 0;
+
+  transition: transform var(--animation), opacity var(--animation);
+}
+
+.project-list > .project-overlay:hover {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.name-about {
+  padding: 20px 24px;
 }
 
 .project-name {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
@@ -524,8 +582,4 @@ img {
   line-height: 1.9;
 
   color: var(--color-gray);
-}
-
-.name-about {
-  padding: 20px 24px;
 }
