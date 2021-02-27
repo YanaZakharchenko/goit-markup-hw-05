@@ -550,6 +550,7 @@ img {
 /* Оверлей */
 
 .overlay-conteiner {
+  overflow: hidden;
   position: relative;
 }
 
@@ -570,14 +571,11 @@ img {
   background-color: var(--background-portfolio);
 
   transform: translateY(100%);
-  opacity: 0;
-
-  transition: transform var(--animation), opacity var(--animation);
+  transition: transform var(--animation);
 }
 
 .project > .project-list:hover .project-overlay,
 .project > .project-list:focus .project-overlay {
-  opacity: 1;
   transform: translateY(0);
 }
 
