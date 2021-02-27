@@ -14,13 +14,16 @@
   --background-icons: rgba(255, 255, 255, 0.1);
   --background-features: rgba(47, 48, 58, 0.8);
   --background-portfolio: rgba(33, 150, 243, 0.9);
-  --background-backbrop: rgba(0, 0, 0, 0.2);
+  --background-backdrop: rgba(0, 0, 0, 0.2);
+  --border-modal-close: 1px solid rgba(0, 0, 0, 0.1);
   --shadow-card: 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   --shadow-project: 0px 1px 1px rgba(0, 0, 0, 0.12),
     0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   --shadow-btn: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
+  --shadow-modal-order: 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   --animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -603,13 +606,13 @@ img {
 
 /* МОДАЛКА */
 
-.backbrop-order {
+.backdrop-order {
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: var(--background-backbrop);
+  background-color: var(--background-backdrop);
 }
 
 .modal-order {
@@ -619,6 +622,8 @@ img {
   transform: translate(-50%, -50%);
   width: 528px;
   height: 581px;
+  border-radius: 4px;
+  box-shadow: var(--shadow-modal-order);
   background-color: var(--color-white);
 }
 
@@ -626,4 +631,16 @@ img {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
+}
+
+.modal-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: var(--border-modal-close);
+  background-color: var(--color-white);
+  cursor: pointer;
 }
