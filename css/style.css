@@ -625,7 +625,21 @@ img {
   border-radius: 4px;
   box-shadow: var(--shadow-modal-order);
   background-color: var(--color-white);
+
+  transition: transform var(--animation);
+
+  /* animation-name: zoom;
+  animation-duration: var(--animation); */
 }
+
+/* @keyframes zoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+} */
 
 .is-hidden {
   visibility: hidden;
@@ -643,4 +657,10 @@ img {
   border: var(--border-modal-close);
   background-color: var(--color-white);
   cursor: pointer;
+}
+
+.modal-icon {
+  position: absolute;
+  top: 5px;
+  right: 5px;
 }
