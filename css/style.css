@@ -626,20 +626,8 @@ img {
   box-shadow: var(--shadow-modal-order);
   background-color: var(--color-white);
 
-  transition: transform var(--animation);
-
-  /* animation-name: zoom;
-  animation-duration: var(--animation); */
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-/* @keyframes zoom {
-  from {
-    transform: scale(0);
-  }
-  to {
-    transform: scale(1);
-  }
-} */
 
 .is-hidden {
   visibility: hidden;
