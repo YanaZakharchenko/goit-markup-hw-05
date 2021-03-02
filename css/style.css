@@ -37,6 +37,7 @@
 body {
   font-family: 'Roboto', sans-serif;
   background-color: #ffffff;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.2;
   letter-spacing: 0.03em;
@@ -79,7 +80,6 @@ img {
 
 .header-logo {
   font-family: 'Raleway', sans-serif;
-  font-weight: bold;
   font-size: 26px;
   color: var(--color-dark);
 
@@ -203,10 +203,9 @@ img {
   margin: 0 auto 30px;
 }
 
-.hero-btn {
+.universal-btn {
   background: var(--color-blue);
   color: var(--color-white);
-  font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
@@ -246,7 +245,6 @@ img {
 
 .section-title {
   font-size: inherit;
-  font-weight: 700;
   text-transform: uppercase;
 
   color: var(--color-dark);
@@ -267,7 +265,6 @@ img {
 }
 
 .features-title {
-  font-weight: 700;
   font-size: 36px;
   text-align: center;
   color: var(--color-dark);
@@ -419,7 +416,6 @@ img {
 
 .footer-logo {
   font-family: 'Raleway', sans-serif;
-  font-weight: bold;
   font-size: 26px;
   color: var(--color-blue);
 }
@@ -429,7 +425,7 @@ img {
 }
 
 .info-contacts {
-  font-style: normal;
+  font-style: 400;
   font-weight: 400;
   line-height: 1.7;
 }
@@ -460,7 +456,6 @@ img {
 }
 
 .footer-title {
-  font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--color-white);
@@ -592,7 +587,6 @@ img {
 }
 
 .project-name {
-  font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
