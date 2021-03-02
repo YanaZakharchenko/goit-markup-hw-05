@@ -451,15 +451,20 @@ img {
   color: var(--color-blue);
 }
 
-.footer-list {
-  display: flex;
+.footer-size-link {
+  margin-right: 93px;
 }
 
 .footer-title {
-  line-height: 1.14;
+  font-size: inherit;
+  line-height: inherit;
   text-transform: uppercase;
   color: var(--color-white);
   margin-bottom: 20px;
+}
+
+.footer-list {
+  display: flex;
 }
 
 .footer-link {
