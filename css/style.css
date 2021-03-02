@@ -345,18 +345,25 @@ img {
   text-align: center;
 }
 
-.team-link {
+.team-links {
   display: flex;
   justify-content: space-between;
+  /* margin-right: -10px; */
+}
+
+.team-item {
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.team-links > .team-item:nth-child(4n) {
+  margin-right: 0;
 }
 
 .social-link {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  width: 44px;
-  height: 44px;
-  margin-right: 10px;
+  max-width: 44px;
+  max-height: 44px;
   border-radius: 50%;
   fill: var(--color-icons);
 
